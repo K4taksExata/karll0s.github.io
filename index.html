@@ -4,81 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karllos Henrique | Portfólio Profissional</title>
     <meta name="description"
-        content="Portfólio de Karllos Henrique Firmino Guinsberg - Desenvolvedor de Software e Estudante de Engenharia de Software.">
+        content="Portfólio de Karllos Henrique Firmino Guinsberg - Engenharia de Software e Desenvolvimento Web">
+    <title>Karllos Guinsberg | Portfólio</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="background-overlay"></div>
-
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">KS<span class="dot">.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container nav-container">
+            <a href="#home" class="logo">KG<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#experience" class="nav-link">Experiência</a>
+                <a href="#contact" class="nav-link btn-contact">Contato</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container hero-content">
-            <span class="greeting">Olá, eu sou</span>
-            <h1>Karllos Henrique</h1>
-            <h2 class="typing-text">Engenharia de Software & Desenvolvimento</h2>
-            <p>Transformando ideias em soluções digitais inovadoras. Especialista em criar experiências web modernas e
-                funcionais.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="greeting">Olá, eu sou</span>
+                <h1 class="name">Karllos Henrique</h1>
+                <h2 class="role">Engenharia de Software <span class="highlight">&</span> Desenvolvimento Web</h2>
+                <p class="description">
+                    Transformando ideias em soluções tecnológicas inovadoras. Especialista em automação, sistemas web e
+                    banco de dados.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Fale Comigo</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:karlloshenrique36@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Karllos Guinsberg"</span>,
+  <span class="property">age</span>: <span class="number">19</span>,
+  <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
+  <span class="property">skills</span>: [
+    <span class="string">"Web Dev"</span>, 
+    <span class="string">"Database"</span>, 
+    <span class="string">"Automation"</span>
+  ],
+  <span class="function">code</span>: <span class="keyword">function</span>() {
+    <span class="keyword">return</span> <span class="string">"Innovation"</span>;
+  }
+};</code></pre>
+                </div>
+                <div class="glow-effect"></div>
             </div>
         </div>
-        <div class="scroll-down">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </header>
+    </section>
 
-    <section id="about" class="section about">
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">Sobre Mim</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/profile.png" alt="Karllos Henrique">
-                </div>
                 <div class="about-text">
-                    <p>Tenho 19 anos e sou apaixonado por tecnologia. Atualmente, trabalho em uma <strong>empresa de
-                            software fiscal</strong> e curso <strong>Engenharia de Software na Uniube</strong>.</p>
-                    <p>Minha jornada começou com o curso técnico em Informática para Web no EEEFM Honório Fraga, onde
-                        também participei da equipe de robótica <strong>Unimate Team</strong>. Desde então, venho
-                        aprimorando minhas habilidades em desenvolvimento web, segurança da informação e inteligência
-                        artificial.</p>
-                    <div class="info-grid">
+                    <p>
+                        Sou estudante de <strong>Engenharia de Software</strong> e Técnico em Informática para Web,
+                        apaixonado por tecnologia e inovação. Com apenas 19 anos, já possuo experiência prática em
+                        desenvolvimento de software, hardware, automação empresarial e marketing digital.
+                    </p>
+                    <p>
+                        Meu foco está em criar sistemas de gestão eficientes, garantir a segurança da informação e
+                        desenvolver soluções que impactam positivamente a eficiência operacional de empresas.
+                    </p>
+                    <div class="personal-info">
                         <div class="info-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <h4>Experiência</h4>
-                                <p>Software Fiscal</p>
-                            </div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Colatina – ES, Brasil</span>
                         </div>
                         <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Formação</h4>
-                                <p>Eng. Software (Uniube)</p>
-                            </div>
+                            <i class="fas fa-envelope"></i>
+                            <span>karlloshenrique36@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+55 (27) 99579-4044</span>
                         </div>
                     </div>
                 </div>
@@ -86,113 +123,210 @@
         </div>
     </section>
 
-    <section id="skills" class="section skills">
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-darker">
         <div class="container">
-            <h2 class="section-title">Habilidades & Certificações</h2>
+            <h2 class="section-title">Habilidades & Tecnologias</h2>
             <div class="skills-grid">
+                <!-- Tech Stack -->
                 <div class="skill-category">
                     <h3><i class="fas fa-code"></i> Desenvolvimento</h3>
-                    <ul class="skill-list">
-                        <li>PHP Básico (SOLYD)</li>
-                        <li>Banco de Dados (Bradesco/Firebird)</li>
-                        <li>Técnico em Informática para WEB</li>
-                        <li>Administração de Banco de Dados</li>
-                    </ul>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Markdown</span>
+                    </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Segurança</h3>
-                    <ul class="skill-list">
-                        <li>Pentester 2.0 (SOLYD)</li>
-                        <li>Monitoramento de Segurança (Microsoft)</li>
-                        <li>Cyber Academy 2024 (Febraban)</li>
-                        <li>Análise de Composição de Software</li>
-                    </ul>
+                    <h3><i class="fas fa-database"></i> Banco de Dados</h3>
+                    <div class="tags">
+                        <span class="tag">Firebird</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Modelagem de Dados</span>
+                    </div>
                 </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Segurança & Infra</h3>
+                    <div class="tags">
+                        <span class="tag">Pentesting</span>
+                        <span class="tag">Hardware</span>
+                        <span class="tag">Automação</span>
+                        <span class="tag">Monitoramento</span>
+                    </div>
+                </div>
+
                 <div class="skill-category">
                     <h3><i class="fas fa-brain"></i> Outros</h3>
-                    <ul class="skill-list">
-                        <li>IA Generativa (Microsoft)</li>
-                        <li>Nota Fiscal Eletrônica (Exata)</li>
-                        <li>Robótica (Unimate Team)</li>
-                    </ul>
+                    <div class="tags">
+                        <span class="tag">Marketing Digital</span>
+                        <span class="tag">Gestão de Sites</span>
+                        <span class="tag">IA Generativa</span>
+                        <span class="tag">NF-e</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section projects">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Meus Projetos</h2>
+            <h2 class="section-title">Projetos em Destaque</h2>
             <div class="projects-grid">
-                <!-- Projeto 1 -->
+                <!-- Project 1 -->
                 <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #2b0a50, #000);">
-                        <i class="fas fa-brain project-icon"></i>
+                    <div class="project-image">
+                        <div class="placeholder-img gradient-1">
+                            <i class="fas fa-tasks"></i>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Fyne Hub</h3>
-                        <p>Um acervo de IAs focado em acessibilidade para pessoas com deficiência e auxílio no dia a
-                            dia. Uma plataforma inclusiva e inovadora.</p>
-                        <div class="tags">
-                            <span>IA</span>
-                            <span>Acessibilidade</span>
+                        <h3>ZenOrder</h3>
+                        <p class="project-cat">Sistema de Gestão de Lojas</p>
+                        <p class="project-desc">
+                            Sistema de controle de ordens de serviço que permite registrar, acompanhar e finalizar
+                            tarefas de forma automatizada, aumentando a eficiência operacional.
+                        </p>
+                        <div class="project-tags">
+                            <span>Automação</span>
+                            <span>Gestão</span>
                             <span>Web</span>
                         </div>
+                        <a href="#" class="btn-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
-                <!-- Projeto 2 -->
+                <!-- Project 2 -->
                 <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #4a148c, #000);">
-                        <i class="fas fa-bus project-icon"></i>
+                    <div class="project-image">
+                        <div class="placeholder-img gradient-2">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3>PassMobile</h3>
-                        <p>Solução inovadora para pagamentos em transporte urbano. Aplicativo fácil de usar que
-                            simplifica a vida dos passageiros.</p>
-                        <div class="tags">
-                            <span>Mobile</span>
-                            <span>Fintech</span>
-                            <span>Transporte</span>
+                        <p class="project-cat">Mobilidade Urbana</p>
+                        <p class="project-desc">
+                            Aplicativo inovador para pagamento de tarifas de transporte urbano de forma digital, prática
+                            e segura, facilitando a experiência do usuário.
+                        </p>
+                        <div class="project-tags">
+                            <span>App</span>
+                            <span>Pagamentos</span>
+                            <span>Inovação</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Projeto 3 -->
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(45deg, #1a237e, #000);">
-                        <i class="fab fa-whatsapp project-icon"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>AutoZap AI</h3>
-                        <p>Automação de WhatsApp com Inteligência Artificial treinável. Personalize o conhecimento do
-                            bot com seus próprios PDFs e documentos.</p>
-                        <div class="tags">
-                            <span>Automação</span>
-                            <span>IA</span>
-                            <span>WhatsApp</span>
-                        </div>
+                        <a href="#" class="btn-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section bg-darker">
+        <div class="container">
+            <div class="resume-grid">
+                <!-- Experience -->
+                <div class="resume-col">
+                    <h2 class="section-title left-align"><i class="fas fa-briefcase"></i> Experiência</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">Fev/2025 – Abr/2025</span>
+                            <h3>Técnico em Software e Hardware</h3>
+                            <h4>Exata Automação Empresarial</h4>
+                            <p>Suporte técnico, automação de processos empresariais e apoio em sistemas de gestão e
+                                NF-e.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">Ago/2023 – Ago/2024</span>
+                            <h3>Marketing Digital e Gestão de Site</h3>
+                            <h4>DM Veículos LTDA</h4>
+                            <p>Gestão de site institucional, estratégias de marketing digital e organização de presença
+                                online.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-col">
+                    <h2 class="section-title left-align"><i class="fas fa-graduation-cap"></i> Formação</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">2024 – 2025</span>
+                            <h3>Engenharia de Software</h3>
+                            <h4>UNIUBE – Colatina</h4>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2022 – 2024</span>
+                            <h3>Técnico em Informática para Web</h3>
+                            <h4>EEEFM Honório Fraga</h4>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Mini List -->
+                    <div class="certifications-box">
+                        <h3><i class="fas fa-certificate"></i> Certificações</h3>
+                        <ul class="cert-list">
+                            <li>PHP Básico – SOLYD</li>
+                            <li>Pentester 2.0 – SOLYD (Offensive)</li>
+                            <li>Monitoramento de Segurança – Microsoft</li>
+                            <li>Análise de Composição de Software – Microsoft</li>
+                            <li>Conceitos Básicos de IA Generativa – Microsoft</li>
+                            <li>Administrando Banco de Dados – Bradesco</li>
+                            <li>Cyber Academy 2024 – Febraban CyberLab</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Vamos Conversar?</h2>
-            <p class="contact-text">Estou sempre aberto a novas oportunidades e projetos interessantes.</p>
-            <div class="contact-links">
-                <a href="mailto:contato@karllos.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
-                <a href="#" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+            <div class="contact-wrapper">
+                <div class="contact-card">
+                    <h3>Entre em contato</h3>
+                    <p>Estou disponível para novos projetos e oportunidades. Sinta-se à vontade para me chamar!</p>
+
+                    <div class="contact-methods">
+                        <a href="https://wa.me/5527995794044" class="contact-method">
+                            <div class="icon-box"><i class="fab fa-whatsapp"></i></div>
+                            <div class="details">
+                                <span>WhatsApp</span>
+                                <strong>+55 (27) 99579-4044</strong>
+                            </div>
+                        </a>
+                        <a href="mailto:karlloshenrique36@gmail.com" class="contact-method">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="details">
+                                <span>E-mail</span>
+                                <strong>karlloshenrique36@gmail.com</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Karllos Henrique. Todos os direitos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-logo">KG.</div>
+                <p>&copy; 2025 Karllos Henrique Firmino Guinsberg. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
