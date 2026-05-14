@@ -4,276 +4,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karllos Henrique | Software Engineer</title>
+    <title>Karllos Henrique | Digital Experience Architect</title>
 
-    <!-- Google Fonts: Inter and Fira Code -->
+    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Gradient Background Glow -->
-    <div class="bg-glow"></div>
-
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="mono accent">~/</span>karllos
-            </a>
-            <nav class="nav-menu">
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#skills" class="nav-link">Stack</a>
-                <a href="#experience" class="nav-link">Experiência</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-                <a href="#contact" class="btn btn-outline">Contato</a>
-            </nav>
-            <button class="mobile-menu-btn" id="mobile-menu-btn">
-                <i data-feather="menu"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="#about" class="mobile-link">Sobre</a>
-        <a href="#skills" class="mobile-link">Stack</a>
-        <a href="#experience" class="mobile-link">Experiência</a>
-        <a href="#projects" class="mobile-link">Projetos</a>
-        <a href="#contact" class="mobile-link accent">Contato</a>
+    <!-- Immersive Background -->
+    <div class="nebula-bg">
+        <div class="star-field"></div>
+        <div class="nebula-cloud cloud-1"></div>
+        <div class="nebula-cloud cloud-2"></div>
+        <div class="nebula-cloud cloud-3"></div>
     </div>
 
-    <main class="container">
+    <!-- Interface Overlay -->
+    <div class="ui-frame">
+        <div class="ui-line top"></div>
+        <div class="ui-line bottom"></div>
+        <div class="ui-line left"></div>
+        <div class="ui-line right"></div>
+    </div>
 
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-symbol">K</span>
+                <span class="logo-text">Henrique</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">Bio</a>
+                <a href="#work" class="nav-item">Projetos</a>
+                <a href="#contact" class="nav-item contact-trigger">Contato</a>
+            </div>
+            <div class="nav-extra">
+                <span class="system-time">00:00:00</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
         <!-- Hero Section -->
-        <section id="about" class="hero">
-            <canvas id="hero-particles"></canvas>
-            <div class="hero-content text-center">
-                <p class="mono accent mb-4">Olá, eu sou</p>
-                <h1 class="hero-title">Karllos Henrique.</h1>
-                <h2 class="hero-subtitle">Construindo soluções de alto impacto.</h2>
-                <p class="hero-text mx-auto">
-                    Sou estudante de Engenharia de Software e Técnico em Informática para Web. Com 19 anos, foco em
-                    criar sistemas de gestão eficientes, garantir a segurança da informação e desenvolver automações que
-                    escalam.
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="badge">Disponível para novos desafios</div>
+                <h1 class="hero-title">
+                    <span class="title-line">Digital</span>
+                    <span class="title-line accent">Innovation</span>
+                </h1>
+                <p class="hero-description">
+                    Engenheiro de Software & Técnico em Web. Transformando linhas de código em experiências digitais
+                    memoráveis e seguras.
                 </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn-premium">
+                        <span>Ver Portfólio</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <div class="social-links">
+                        <a href="https://github.com/karll0s" target="_blank" title="GitHub"><i
+                                data-lucide="github"></i></a>
+                        <a href="https://wa.me/5527995794044" target="_blank" title="WhatsApp"><i
+                                data-lucide="message-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
 
-                <div class="hero-contact mono justify-center">
-                    <span class="contact-item"><i data-feather="map-pin"></i> Colatina, ES</span>
-                    <span class="contact-item"><i data-feather="mail"></i> karlloshenrique36@gmail.com</span>
-                    <span class="contact-item"><i data-feather="phone"></i> +55 (27) 99579-4044</span>
+        <!-- Stats Section -->
+        <section class="stats-grid">
+            <div class="stat-item" data-reveal>
+                <span class="stat-value">19</span>
+                <span class="stat-label">Anos de Idade</span>
+            </div>
+            <div class="stat-item" data-reveal>
+                <span class="stat-value">5+</span>
+                <span class="stat-label">Anos de Código</span>
+            </div>
+            <div class="stat-item" data-reveal>
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Foco em OS & Web</span>
+            </div>
+        </section>
+
+        <!-- About / Bento Section -->
+        <section id="about" class="bento-section">
+            <div class="section-tag">Explore // 01</div>
+            <h2 class="section-heading">Onde a lógica encontra o design.</h2>
+
+            <div class="bento-grid">
+                <div class="bento-item photo-box" data-reveal>
+                    <img src="assets/profile.png" alt="Karllos Henrique" class="bento-photo">
+                    <div class="photo-overlay"></div>
                 </div>
 
-                <div class="hero-actions justify-center mt-8">
-                    <a href="#projects" class="btn btn-primary btn-lg">Ver Projetos</a>
-                    <a href="https://wa.me/5527995794044" target="_blank" class="btn btn-outline btn-lg">Vamos
-                        Conversar</a>
+                <div class="bento-item main-info" data-reveal>
+                    <div class="item-content">
+                        <i data-lucide="user-check" class="item-icon"></i>
+                        <h3>Visão & Impacto</h3>
+                        <p>Sou um desenvolvedor movido pela resolução de problemas complexos através da tecnologia. Com
+                            formação técnica em Informática para Web e cursando Engenharia de Software, combino uma base
+                            sólida em hardware e infraestrutura com o desenvolvimento de software de alto nível.</p>
+                    </div>
+                </div>
+
+                <div class="bento-item skills-box" data-reveal>
+                    <h3>Tech Stack</h3>
+                    <div class="skills-tags">
+                        <span>Node.js</span>
+                        <span>PHP</span>
+                        <span>PostgreSQL</span>
+                        <span>Firebird SQL</span>
+                        <span>IA Generativa</span>
+                    </div>
+                </div>
+
+                <div class="bento-item loc-box" data-reveal>
+                    <div style="text-align: center;">
+                        <i data-lucide="shield-check"
+                            style="color: var(--purple-main); margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;"></i>
+                        <span style="display: block; font-size: 0.9rem; font-weight: 600;">Segurança</span>
+                    </div>
+                </div>
+
+                <div class="bento-item certs-box" data-reveal>
+                    <h3>Formação</h3>
+                    <ul style="font-size: 0.8rem;">
+                        <li>Engenharia de Software // UNIUBE</li>
+                        <li>Técnico em Info // Honório Fraga</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="section-header">
-                <h2 class="section-title"><span class="mono accent">01.</span> Tech Stack</h2>
-                <div class="line"></div>
-            </div>
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <div class="section-tag">Portfólio // 02</div>
 
-            <div class="skills-grid">
-                <div class="skill-box">
-                    <div class="skill-header">
-                        <i data-feather="code" class="accent"></i>
-                        <h3>Desenvolvimento</h3>
+            <div class="projects-container">
+                <!-- Project: NeXa -->
+                <div class="project-item" data-reveal>
+                    <div class="project-info">
+                        <span class="project-category">AI & SaaS Platform</span>
+                        <h3 class="project-name">NeXa</h3>
+                        <p>Plataforma SaaS de atendimento inteligente via WhatsApp. Integração de IA (OpenAI) para
+                            automação de vendas e suporte, com gestão multi-instância e transição fluida para
+                            atendimento humano.</p>
+                        <div class="project-meta">
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>OpenAI</span>
+                        </div>
                     </div>
-                    <ul class="skill-list mono">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>Markdown</li>
-                    </ul>
+                    <div class="project-visual">
+                        <div class="visual-placeholder purple-glow">
+                            <i data-lucide="bot"
+                                style="width: 100px; height: 100px; color: var(--purple-main); opacity: 0.5;"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-box">
-                    <div class="skill-header">
-                        <i data-feather="database" class="accent"></i>
-                        <h3>Banco de Dados</h3>
+                <div class="project-item reverse" data-reveal>
+                    <div class="project-info">
+                        <span class="project-category">Automação Empresarial</span>
+                        <h3 class="project-name">ZenOrder</h3>
+                        <p>Otimização de fluxos de serviço para empresas de automação. Registro, acompanhamento e
+                            finalização de O.S. com foco em UX e eficiência operacional.</p>
+                        <div class="project-meta">
+                            <span>Web App</span>
+                            <span>PHP / Firebird</span>
+                        </div>
                     </div>
-                    <ul class="skill-list mono">
-                        <li>Firebird</li>
-                        <li>SQL</li>
-                        <li>Modelagem de Dados</li>
-                    </ul>
+                    <div class="project-visual">
+                        <div class="visual-placeholder">
+                            <i data-lucide="settings"
+                                style="width: 100px; height: 100px; color: var(--text-dim); opacity: 0.2;"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill-box">
-                    <div class="skill-header">
-                        <i data-feather="shield" class="accent"></i>
-                        <h3>Segurança & Infra</h3>
+                <div class="project-item" data-reveal>
+                    <div class="project-info">
+                        <span class="project-category">Mobilidade Urbana</span>
+                        <h3 class="project-name">PassMobile</h3>
+                        <p>Redefinindo o pagamento de tarifas de transporte de forma digital. Um sistema focado em
+                            inovação para tornar a mobilidade urbana mais prática e segura.</p>
+                        <div class="project-meta">
+                            <span>Mobile</span>
+                            <span>Inovação</span>
+                        </div>
                     </div>
-                    <ul class="skill-list mono">
-                        <li>Pentesting</li>
-                        <li>Hardware</li>
-                        <li>Automação</li>
-                        <li>Monitoramento</li>
-                    </ul>
-                </div>
-
-                <div class="skill-box">
-                    <div class="skill-header">
-                        <i data-feather="cpu" class="accent"></i>
-                        <h3>Outros</h3>
+                    <div class="project-visual">
+                        <div class="visual-placeholder blue-glow">
+                            <i data-lucide="smartphone"
+                                style="width: 100px; height: 100px; color: #3b82f6; opacity: 0.3;"></i>
+                        </div>
                     </div>
-                    <ul class="skill-list mono">
-                        <li>Marketing Digital</li>
-                        <li>Gestão de Sites</li>
-                        <li>IA Generativa</li>
-                        <li>NF-e</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="certificates mt-12">
-                <h3 class="subsection-title">Certificações</h3>
-                <div class="cert-tags mono">
-                    <span>PHP Básico - SOLYD</span>
-                    <span>Pentester 2.0 - SOLYD</span>
-                    <span>Monitoramento de Segurança - Microsoft</span>
-                    <span>Análise de Composição - Microsoft</span>
-                    <span>IA Generativa - Microsoft</span>
-                    <span>BD - Bradesco</span>
-                    <span>Cyber Academy 2024 - Febraban</span>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="section-header">
-                <h2 class="section-title"><span class="mono accent">02.</span> Trajetória</h2>
-                <div class="line"></div>
+        <!-- Final Contact -->
+        <section id="contact" class="footer-cta">
+            <div class="cta-content">
+                <h2 class="cta-title">Vamos construir o futuro juntos?</h2>
+                <a href="mailto:karlloshenrique36@gmail.com" class="btn-huge">
+                    Diga Olá <i data-lucide="mail"></i>
+                </a>
             </div>
 
-            <div class="timeline">
-
-                <!-- Exp 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-date mono accent">Fev 2025 - Abr 2025</div>
-                    <div class="timeline-content">
-                        <h3>Técnico em Software e Hardware <span class="accent">@ Exata Automação Empresarial</span>
-                        </h3>
-                        <p>Suporte técnico, automação de processos empresariais e apoio em sistemas de gestão e NF-e.
-                        </p>
+            <footer class="footer">
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Karllos Henrique. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="https://github.com/karll0s" target="_blank">GitHub</a>
+                        <a href="https://wa.me/5527995794044" target="_blank">WhatsApp</a>
                     </div>
                 </div>
-
-                <!-- Exp 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-date mono accent">Ago 2023 - Ago 2024</div>
-                    <div class="timeline-content">
-                        <h3>Marketing Digital e Gestão de Site <span class="accent">@ DM Veículos LTDA</span></h3>
-                        <p>Gestão de site institucional, estratégias de marketing digital e organização de presença
-                            online.</p>
-                    </div>
-                </div>
-
-                <!-- Formação 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-date mono mute">2024 - 2025</div>
-                    <div class="timeline-content">
-                        <h3>Engenharia de Software <span class="mute">@ UNIUBE - Colatina</span></h3>
-                        <p>Formação em andamento, focada em engenharia, arquitetura e desenvolvimento de software.</p>
-                    </div>
-                </div>
-
-                <!-- Formação 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-date mono mute">2022 - 2024</div>
-                    <div class="timeline-content">
-                        <h3>Técnico em Informática para Web <span class="mute">@ EEEFM Honório Fraga</span></h3>
-                        <p>Desenvolvimento web, infraestrutura e conceitos de TI fundamentais.</p>
-                    </div>
-                </div>
-
-            </div>
+            </footer>
         </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="section-header">
-                <h2 class="section-title"><span class="mono accent">03.</span> Projetos</h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="projects-grid">
-
-                <!-- Project: ZenOrder -->
-                <div class="project-card">
-                    <div class="project-top">
-                        <i data-feather="folder" class="folder-icon accent"></i>
-                        <a href="#" class="project-link"><i data-feather="external-link"></i></a>
-                    </div>
-                    <h3 class="project-title">ZenOrder</h3>
-                    <div class="project-desc">
-                        Sistema de controle de ordens de serviço que permite registrar, acompanhar e finalizar tarefas
-                        de forma automatizada, aumentando a eficiência operacional das lojas.
-                    </div>
-                    <ul class="project-tech mono">
-                        <li>Automação</li>
-                        <li>Gestão</li>
-                        <li>Web</li>
-                    </ul>
-                </div>
-
-                <!-- Project: PassMobile -->
-                <div class="project-card">
-                    <div class="project-top">
-                        <i data-feather="folder" class="folder-icon accent"></i>
-                        <a href="#" class="project-link"><i data-feather="external-link"></i></a>
-                    </div>
-                    <h3 class="project-title">PassMobile</h3>
-                    <div class="project-desc">
-                        Aplicativo inovador para pagamento de tarifas de transporte urbano de forma digital. Tornando a
-                        experiência de mobilidade urbana prática e segura.
-                    </div>
-                    <ul class="project-tech mono">
-                        <li>App</li>
-                        <li>Pagamentos</li>
-                        <li>Inovação</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-            <p class="mono accent mb-4">04. Qual é o próximo passo?</p>
-            <h2 class="contact-title">Entrar em Contato</h2>
-            <p class="contact-text">
-                No momento, estou aberto a novas oportunidades e projetos. Se você tiver uma pergunta ou apenas quiser
-                dizer um oi, farei o possível para responder!
-            </p>
-            <a href="mailto:karlloshenrique36@gmail.com" class="btn btn-primary btn-lg">Diga Olá</a>
-        </section>
-
     </main>
-
-    <footer>
-        <div class="container footer-content mono text-center">
-            <p>Construído por Karllos Henrique</p>
-            <p class="mt-2 text-sm text-muted opacity-50">&copy; 2026</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
