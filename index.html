@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Karllos Henrique, engenheiro de software e desenvolvedor web focado em produtos digitais, automação e inteligência artificial.">
+    <meta name="theme-color" content="#050505">
+    <title>Karllos Henrique — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js', 'intro-pending');</script>
+    <noscript>
+        <style>
+            .intro-screen { display: none !important; }
+            .site-header, main { opacity: 1 !important; visibility: visible !important; }
+        </style>
+    </noscript>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="intro-screen" id="intro-screen" role="dialog" aria-modal="true" aria-labelledby="intro-title"
+        aria-describedby="intro-instruction">
+        <canvas id="intro-sparkles" aria-hidden="true"></canvas>
+        <div class="intro-comets" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="intro-vignette" aria-hidden="true"></div>
+        <span class="intro-coordinate intro-coordinate-top" aria-hidden="true">PORTFÓLIO / 2026</span>
+        <span class="intro-coordinate intro-coordinate-bottom" aria-hidden="true">SOFTWARE · WEB · IA</span>
+
+        <div class="intro-content">
+            <p class="intro-eyebrow" id="intro-title">Bem-vindo ao meu universo digital</p>
+            <button class="intro-name" id="enter-portfolio" type="button" aria-label="Entrar no portfólio de Karllos">
+                <span>K</span><span>a</span><span>r</span><span>l</span><span>l</span><span>o</span><span>s</span>
+            </button>
+            <div class="intro-light" aria-hidden="true">
+                <span></span>
+                <i></i>
+            </div>
+            <p class="intro-instruction" id="intro-instruction">
+                <span class="intro-click-icon" aria-hidden="true"></span>
+                Clique em Karllos para entrar
+            </p>
+        </div>
+
+        <div class="intro-corners" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+    <div class="space-background" aria-hidden="true">
+        <canvas id="starfield"></canvas>
+        <div class="star-haze"></div>
+        <span class="shooting-star shooting-star-one"></span>
+        <span class="shooting-star shooting-star-two"></span>
+    </div>
+    <header class="site-header" data-header>
+        <div class="header-inner">
+            <a class="brand" href="#inicio" aria-label="Karllos Henrique — início">
+                <span class="brand-mark">KH</span>
+                <span class="brand-copy"><strong>Karllos Henrique</strong><small>Software Engineer</small></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">
+                <span></span><span></span>
+            </button>
+            <nav class="site-navigation" id="site-navigation" aria-label="Navegação principal">
+                <a href="#inicio" class="nav-link active" aria-current="page"><span>01</span>Início</a>
+                <a href="#projetos" class="nav-link"><span>02</span>Projetos</a>
+                <a href="#sobre" class="nav-link"><span>03</span>Sobre</a>
+                <a href="#contato" class="nav-link nav-link-cta"><span>04</span>Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-status">
+                <p class="availability"><span class="status-dot"></span>Disponível para novos projetos</p>
+                <p class="hero-location">Brasil <span>/</span> UTC −03</p>
+            </div>
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Software Engineer <span>×</span> Web Developer</p>
+                    <h1 id="hero-title">
+                        <span class="title-solid">Karllos</span>
+                        <span class="title-outline">Henrique</span>
+                    </h1>
+                    <p class="hero-intro">Transformo problemas complexos em experiências digitais simples, seguras e memoráveis.</p>
+                    <div class="hero-actions">
+                        <a class="button button-light" href="#projetos">
+                            Explorar projetos
+                            <i data-lucide="arrow-down-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="button button-ghost" href="mailto:karlloshenrique36@gmail.com">
+                            Fale comigo <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+                <figure class="portrait-card" data-reveal>
+                    <div class="portrait-orbit orbit-one"></div>
+                    <div class="portrait-orbit orbit-two"></div>
+                    <div class="portrait-frame">
+                        <span class="corner corner-top-left"></span>
+                        <span class="corner corner-top-right"></span>
+                        <span class="corner corner-bottom-left"></span>
+                        <span class="corner corner-bottom-right"></span>
+                        <img src="assets/profile.png" alt="Retrato de Karllos Henrique" width="568" height="547">
+                        <span class="portrait-scanline"></span>
+                        <span class="portrait-index">001 / KH</span>
+                    </div>
+                    <figcaption>
+                        <span>Engenharia de software</span>
+                        <span>Web · Automação · IA</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <dl class="hero-facts" data-reveal>
+                <div><dt>05+</dt><dd>Anos criando com código</dd></div>
+                <div><dt>03</dt><dd>Produtos em destaque</dd></div>
+                <div><dt>100%</dt><dd>Foco em soluções reais</dd></div>
+            </dl>
+            <a class="scroll-cue" href="#projetos" aria-label="Ir para projetos">
+                <span class="scroll-line"></span>Role para explorar
+            </a>
+        </section>
+        <section class="projects section-shell section-space" id="projetos" aria-labelledby="projects-title">
+            <header class="section-header" data-reveal>
+                <div>
+                    <p class="section-index">02 / PROJETOS</p>
+                    <h2 id="projects-title">Trabalhos<br><span>selecionados.</span></h2>
+                </div>
+                <p class="section-summary">Produtos pensados da estratégia à implementação, unindo engenharia, clareza e impacto.</p>
+            </header>
+            <div class="projects-grid">
+                <article class="project-card project-featured" data-reveal>
+                    <div class="project-copy">
+                        <div class="project-topline"><span>01</span><span>AI / SaaS</span></div>
+                        <div>
+                            <p class="project-kicker">Atendimento inteligente</p>
+                            <h3>NeXa</h3>
+                            <p>Plataforma SaaS para atendimento via WhatsApp com IA, automação de vendas, gestão multi-instância e transição fluida para o atendimento humano.</p>
+                        </div>
+                        <ul class="tech-list" aria-label="Tecnologias">
+                            <li>Node.js</li><li>PostgreSQL</li><li>OpenAI</li>
+                        </ul>
+                    </div>
+                    <div class="project-art nexa-art" aria-hidden="true">
+                        <div class="dashboard-window">
+                            <div class="window-bar">
+                                <span class="window-dots"><i></i><i></i><i></i></span>
+                                <span>nexa / workspace</span>
+                                <span class="window-status">online</span>
+                            </div>
+                            <div class="dashboard-body">
+                                <div class="dashboard-sidebar">
+                                    <span class="sidebar-logo">N</span>
+                                    <i class="sidebar-item active"></i><i class="sidebar-item"></i>
+                                    <i class="sidebar-item"></i><i class="sidebar-item"></i>
+                                </div>
+                                <div class="chat-panel">
+                                    <div class="chat-header">
+                                        <span class="avatar">AI</span>
+                                        <span><strong>NeXa Assistant</strong><small>Respondendo agora</small></span>
+                                        <i></i>
+                                    </div>
+                                    <div class="chat-content">
+                                        <span class="chat-date">Hoje, 14:32</span>
+                                        <p class="message message-in">Olá! Como posso ajudar você hoje?</p>
+                                        <p class="message message-out">Quero conhecer o plano profissional.</p>
+                                        <p class="message message-in short">Perfeito. Vou te mostrar.</p>
+                                    </div>
+                                    <div class="chat-input"><span>Digite uma mensagem...</span><i>↗</i></div>
+                                </div>
+                                <div class="metrics-panel">
+                                    <span class="metric-label">Conversas</span><strong>1.284</strong>
+                                    <div class="metric-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                                    <span class="metric-caption">+18.4% este mês</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card project-compact" data-reveal>
+                    <div class="project-copy">
+                        <div class="project-topline"><span>02</span><span>Automação</span></div>
+                        <div>
+                            <p class="project-kicker">Operação empresarial</p>
+                            <h3>ZenOrder</h3>
+                            <p>Fluxos de ordens de serviço mais claros, do registro à finalização, com foco em eficiência operacional e uma experiência sem atritos.</p>
+                        </div>
+                        <ul class="tech-list" aria-label="Tecnologias">
+                            <li>Web App</li><li>PHP</li><li>Firebird</li>
+                        </ul>
+                    </div>
+                    <div class="project-art flow-art" aria-hidden="true">
+                        <span class="flow-path path-one"></span>
+                        <span class="flow-path path-two"></span>
+                        <div class="flow-node node-one"><span>01</span><strong>Entrada</strong><i>12 novas</i></div>
+                        <div class="flow-node node-two"><span>02</span><strong>Execução</strong><i>08 ativas</i></div>
+                        <div class="flow-node node-three"><span>03</span><strong>Concluído</strong><i>94%</i></div>
+                    </div>
+                </article>
+                <article class="project-card project-compact" data-reveal>
+                    <div class="project-copy">
+                        <div class="project-topline"><span>03</span><span>Mobilidade</span></div>
+                        <div>
+                            <p class="project-kicker">Transporte urbano</p>
+                            <h3>PassMobile</h3>
+                            <p>Pagamento digital de tarifas de transporte em uma experiência mobile prática, acessível e segura para a mobilidade urbana.</p>
+                        </div>
+                        <ul class="tech-list" aria-label="Tecnologias">
+                            <li>Mobile</li><li>UX</li><li>Payments</li>
+                        </ul>
+                    </div>
+                    <div class="project-art mobile-art" aria-hidden="true">
+                        <div class="phone">
+                            <div class="phone-speaker"></div>
+                            <div class="phone-screen">
+                                <div class="mobile-head"><span>pass/mobile</span><i>•••</i></div>
+                                <p>Boa tarde,</p><strong>Karllos</strong>
+                                <div class="travel-card">
+                                    <span>Saldo disponível</span><strong>R$ 48,90</strong>
+                                    <div class="route-line"><i></i><span></span><i></i></div>
+                                    <small>Linha ativa · 301</small>
+                                </div>
+                                <div class="mobile-action"><span>⌁</span>Aproximar para pagar</div>
+                            </div>
+                        </div>
+                        <span class="mobile-ring ring-one"></span>
+                        <span class="mobile-ring ring-two"></span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <div class="skills-marquee" aria-label="Competências">
+            <div class="skills-track">
+                <span>NODE.JS</span><i>✦</i><span>PHP</span><i>✦</i>
+                <span>POSTGRESQL</span><i>✦</i><span>FIREBIRD SQL</span><i>✦</i>
+                <span>IA GENERATIVA</span><i>✦</i><span>AUTOMAÇÃO</span><i>✦</i>
+                <span aria-hidden="true">NODE.JS</span><i aria-hidden="true">✦</i>
+                <span aria-hidden="true">PHP</span><i aria-hidden="true">✦</i>
+                <span aria-hidden="true">POSTGRESQL</span><i aria-hidden="true">✦</i>
+                <span aria-hidden="true">FIREBIRD SQL</span><i aria-hidden="true">✦</i>
+                <span aria-hidden="true">IA GENERATIVA</span><i aria-hidden="true">✦</i>
+                <span aria-hidden="true">AUTOMAÇÃO</span><i aria-hidden="true">✦</i>
+            </div>
+        </div>
+        <section class="about section-shell section-space" id="sobre" aria-labelledby="about-title">
+            <header class="section-header about-header" data-reveal>
+                <div>
+                    <p class="section-index">03 / SOBRE</p>
+                    <h2 id="about-title">Lógica com<br><span>propósito.</span></h2>
+                </div>
+                <p class="section-summary">Gosto de entender o problema por inteiro antes de escrever a primeira linha de código.</p>
+            </header>
+            <div class="about-grid">
+                <article class="info-card bio-card" data-reveal>
+                    <div class="card-label"><span>01</span>Minha visão</div>
+                    <i data-lucide="scan-line" class="info-icon" aria-hidden="true"></i>
+                    <p class="bio-lead">Desenvolvo soluções que conectam tecnologia, pessoas e resultados.</p>
+                    <p>Sou técnico em Informática para Web e estudante de Engenharia de Software. Minha base combina desenvolvimento, hardware e infraestrutura para criar produtos sólidos de ponta a ponta.</p>
+                </article>
+                <article class="info-card stack-card" data-reveal>
+                    <div class="card-label"><span>02</span>Tech stack</div>
+                    <ul class="stack-list">
+                        <li><span>Node.js</span><small>Backend</small></li>
+                        <li><span>PHP</span><small>Web</small></li>
+                        <li><span>PostgreSQL</span><small>Database</small></li>
+                        <li><span>Firebird SQL</span><small>Database</small></li>
+                        <li><span>IA Generativa</span><small>Intelligence</small></li>
+                    </ul>
+                </article>
+                <article class="info-card education-card" data-reveal>
+                    <div class="card-label"><span>03</span>Formação</div>
+                    <div class="education-item">
+                        <span>Em curso</span>
+                        <h3>Engenharia de Software</h3>
+                        <p>UNIUBE</p>
+                    </div>
+                    <div class="education-item">
+                        <span>Concluído</span>
+                        <h3>Técnico em Informática para Web</h3>
+                        <p>E.E.E.F.M. Honório Fraga</p>
+                    </div>
+                </article>
+                <article class="info-card focus-card" data-reveal>
+                    <div class="card-label"><span>04</span>Como trabalho</div>
+                    <div class="focus-symbol" aria-hidden="true"><span></span><span></span><i></i></div>
+                    <div>
+                        <h3>Seguro por princípio.</h3>
+                        <p>Código limpo, decisões conscientes e experiências feitas para durar.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="contact section-shell" id="contato" aria-labelledby="contact-title">
+            <div class="contact-inner" data-reveal>
+                <p class="section-index">04 / CONTATO</p>
+                <p class="contact-kicker"><span class="status-dot"></span>Vamos criar algo relevante</p>
+                <h2 id="contact-title">Tem uma ideia?<br><span>Vamos fazê-la acontecer.</span></h2>
+                <a class="contact-email" href="mailto:karlloshenrique36@gmail.com">
+                    <span>karlloshenrique36@gmail.com</span>
+                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                </a>
+                <div class="contact-links">
+                    <a href="https://github.com/karll0s" target="_blank" rel="noopener noreferrer">
+                        GitHub <span aria-hidden="true">↗</span>
+                    </a>
+                    <a href="https://wa.me/5527995794044" target="_blank" rel="noopener noreferrer">
+                        WhatsApp <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+            <footer class="site-footer">
+                <p>© <span id="current-year">2026</span> Karllos Henrique</p>
+                <p>Design & código com propósito.</p>
+                <a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
